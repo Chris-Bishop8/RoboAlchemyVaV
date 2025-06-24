@@ -1,0 +1,148 @@
+<https://w3id.org/RoboAlchemyVaV> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<https://w3id.org/RoboAlchemyVaV> <http://www.w3.org/2002/07/owl#versionIRI> <https://w3id.org/RoboAlchemyVaV> .
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# https://w3id.org/RoboAlchemyVaV#hasComponent
+<https://w3id.org/RoboAlchemyVaV#hasComponent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/RoboAlchemyVaV#hasComponent> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+# 
+# https://w3id.org/RoboAlchemyVaV#hasRequirement
+<https://w3id.org/RoboAlchemyVaV#hasRequirement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/RoboAlchemyVaV#hasRequirement> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# https://w3id.org/RoboAlchemyVaV#AvoidanceSafetyProbability
+<https://w3id.org/RoboAlchemyVaV#AvoidanceSafetyProbability> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/RoboAlchemyVaV#AvoidanceSafetyProbability> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/RoboAlchemyVaV#V&VMeasurement> .
+<https://w3id.org/RoboAlchemyVaV#AvoidanceSafetyProbability> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "The probability that the UGV never enters the forbidden‐zone state during the entire patrol (i.e. loc ≠ 5 in all steps)." .
+# 
+# https://w3id.org/RoboAlchemyVaV#BostonDynamicsSpot
+<https://w3id.org/RoboAlchemyVaV#BostonDynamicsSpot> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/RoboAlchemyVaV#BostonDynamicsSpot> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/RoboAlchemyVaV#Legged> .
+# 
+# https://w3id.org/RoboAlchemyVaV#ClearpathJackal
+<https://w3id.org/RoboAlchemyVaV#ClearpathJackal> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/RoboAlchemyVaV#ClearpathJackal> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/RoboAlchemyVaV#Wheeled> .
+# 
+# https://w3id.org/RoboAlchemyVaV#CombinedSafetyEnergyProbability
+<https://w3id.org/RoboAlchemyVaV#CombinedSafetyEnergyProbability> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/RoboAlchemyVaV#CombinedSafetyEnergyProbability> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/RoboAlchemyVaV#V&VMeasurement> .
+<https://w3id.org/RoboAlchemyVaV#CombinedSafetyEnergyProbability> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "The probability that the UGV both avoids the forbidden zone at all times and maintains SoC above the threshold throughout the patrol." .
+# 
+# https://w3id.org/RoboAlchemyVaV#Component
+<https://w3id.org/RoboAlchemyVaV#Component> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://w3id.org/RoboAlchemyVaV#ConditionalPatrolSuccessGivenNoCollision
+<https://w3id.org/RoboAlchemyVaV#ConditionalPatrolSuccessGivenNoCollision> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/RoboAlchemyVaV#ConditionalPatrolSuccessGivenNoCollision> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/RoboAlchemyVaV#V&VMeasurement> .
+<https://w3id.org/RoboAlchemyVaV#ConditionalPatrolSuccessGivenNoCollision> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "The probability that the UGV reaches the done state (loc = 4) given that it never entered the forbidden zone." .
+# 
+# https://w3id.org/RoboAlchemyVaV#DJIMini4
+<https://w3id.org/RoboAlchemyVaV#DJIMini4> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/RoboAlchemyVaV#DJIMini4> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/RoboAlchemyVaV#Flying> .
+# 
+# https://w3id.org/RoboAlchemyVaV#Enviroment
+<https://w3id.org/RoboAlchemyVaV#Enviroment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://w3id.org/RoboAlchemyVaV#ExpectedMoves
+<https://w3id.org/RoboAlchemyVaV#ExpectedMoves> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/RoboAlchemyVaV#ExpectedMoves> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/RoboAlchemyVaV#V&VMeasurement> .
+<https://w3id.org/RoboAlchemyVaV#ExpectedMoves> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "The expected total number of waypoint‐moves (transitions) taken until absorption in either the done or forbidden state." .
+# 
+# https://w3id.org/RoboAlchemyVaV#Flying
+<https://w3id.org/RoboAlchemyVaV#Flying> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/RoboAlchemyVaV#Flying> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/RoboAlchemyVaV#Robot> .
+# 
+# https://w3id.org/RoboAlchemyVaV#Inside
+<https://w3id.org/RoboAlchemyVaV#Inside> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/RoboAlchemyVaV#Inside> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/RoboAlchemyVaV#Enviroment> .
+# 
+# https://w3id.org/RoboAlchemyVaV#Inspection
+<https://w3id.org/RoboAlchemyVaV#Inspection> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/RoboAlchemyVaV#Inspection> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/RoboAlchemyVaV#Task> .
+# 
+# https://w3id.org/RoboAlchemyVaV#Legged
+<https://w3id.org/RoboAlchemyVaV#Legged> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/RoboAlchemyVaV#Legged> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/RoboAlchemyVaV#Robot> .
+# 
+# https://w3id.org/RoboAlchemyVaV#LeoRover
+<https://w3id.org/RoboAlchemyVaV#LeoRover> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/RoboAlchemyVaV#LeoRover> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/RoboAlchemyVaV#Wheeled> .
+<https://w3id.org/RoboAlchemyVaV#LeoRover> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid1 .
+_:genid1 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/RoboAlchemyVaV#Wheels> .
+_:genid1 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/RoboAlchemyVaV#hasComponent> .
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+# 
+# https://w3id.org/RoboAlchemyVaV#MaintenanceRepairAndInstall
+<https://w3id.org/RoboAlchemyVaV#MaintenanceRepairAndInstall> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/RoboAlchemyVaV#MaintenanceRepairAndInstall> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/RoboAlchemyVaV#Task> .
+# 
+# https://w3id.org/RoboAlchemyVaV#Outdoors
+<https://w3id.org/RoboAlchemyVaV#Outdoors> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/RoboAlchemyVaV#Outdoors> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/RoboAlchemyVaV#Enviroment> .
+# 
+# https://w3id.org/RoboAlchemyVaV#PatrolSuccessProbability
+<https://w3id.org/RoboAlchemyVaV#PatrolSuccessProbability> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/RoboAlchemyVaV#PatrolSuccessProbability> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/RoboAlchemyVaV#V&VMeasurement> .
+<https://w3id.org/RoboAlchemyVaV#PatrolSuccessProbability> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "The probability that the UGV eventually reaches its terminal “done” state (loc = 4) by successfully visiting all four waypoints in order, starting from the initial waypoint." .
+# 
+# https://w3id.org/RoboAlchemyVaV#Requirement
+<https://w3id.org/RoboAlchemyVaV#Requirement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://w3id.org/RoboAlchemyVaV#Robot
+<https://w3id.org/RoboAlchemyVaV#Robot> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://w3id.org/RoboAlchemyVaV#Task
+<https://w3id.org/RoboAlchemyVaV#Task> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://w3id.org/RoboAlchemyVaV#TimeBoundedCompletionProbability
+<https://w3id.org/RoboAlchemyVaV#TimeBoundedCompletionProbability> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/RoboAlchemyVaV#TimeBoundedCompletionProbability> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/RoboAlchemyVaV#V&VMeasurement> .
+<https://w3id.org/RoboAlchemyVaV#TimeBoundedCompletionProbability> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "The probability that the UGV reaches the done state within k moves (here, k = 5)." .
+# 
+# https://w3id.org/RoboAlchemyVaV#UnitreeA1
+<https://w3id.org/RoboAlchemyVaV#UnitreeA1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/RoboAlchemyVaV#UnitreeA1> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/RoboAlchemyVaV#Legged> .
+# 
+# https://w3id.org/RoboAlchemyVaV#Wheeled
+<https://w3id.org/RoboAlchemyVaV#Wheeled> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/RoboAlchemyVaV#Wheeled> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/RoboAlchemyVaV#Robot> .
+# 
+# https://w3id.org/RoboAlchemyVaV#Wheels
+<https://w3id.org/RoboAlchemyVaV#Wheels> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/RoboAlchemyVaV#Wheels> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/RoboAlchemyVaV#Component> .
+# 
+# https://w3id.org/RoboAlchemyVaV#Battery‐DepletionRisk
+<https://w3id.org/RoboAlchemyVaV#Battery‐DepletionRisk> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/RoboAlchemyVaV#Battery‐DepletionRisk> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/RoboAlchemyVaV#V&VMeasurement> .
+<https://w3id.org/RoboAlchemyVaV#Battery‐DepletionRisk> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "The probability that the UGV’s battery state‐of‐charge (SoC) falls to or below the configured threshold at any time before absorption." .
+# 
+# https://w3id.org/RoboAlchemyVaV#Forbidden‐ZoneEntryProbability
+<https://w3id.org/RoboAlchemyVaV#Forbidden‐ZoneEntryProbability> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/RoboAlchemyVaV#Forbidden‐ZoneEntryProbability> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/RoboAlchemyVaV#V&VMeasurement> .
+<https://w3id.org/RoboAlchemyVaV#Forbidden‐ZoneEntryProbability> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "The probability that the UGV ever enters the forbidden‐zone absorbing state (loc = 5) at any point during its patrol." .
+# 
+# https://w3id.org/RoboAlchemyVaV#High‐RadiationAlertRate
+<https://w3id.org/RoboAlchemyVaV#High‐RadiationAlertRate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/RoboAlchemyVaV#High‐RadiationAlertRate> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/RoboAlchemyVaV#V&VMeasurement> .
+<https://w3id.org/RoboAlchemyVaV#High‐RadiationAlertRate> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "The expected number of high‐radiation alerts per waypoint‐move, measured until absorption in either done or forbidden state." .
+# 
+# https://w3id.org/RoboAlchemyVaV#V&VMeasurement
+<https://w3id.org/RoboAlchemyVaV#V&VMeasurement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/
