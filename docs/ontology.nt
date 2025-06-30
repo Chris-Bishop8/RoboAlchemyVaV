@@ -1,0 +1,148 @@
+<https://w3id.org/RoboOntology> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<https://w3id.org/RoboOntology> <http://www.w3.org/2002/07/owl#versionIRI> <https://w3id.org/RoboOntology> .
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# https://w3id.org/RoboOntology#hasComponent
+<https://w3id.org/RoboOntology#hasComponent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/RoboOntology#hasComponent> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+# 
+# https://w3id.org/RoboOntology#hasRequirement
+<https://w3id.org/RoboOntology#hasRequirement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/RoboOntology#hasRequirement> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# https://w3id.org/RoboOntology#AvoidanceSafetyProbability
+<https://w3id.org/RoboOntology#AvoidanceSafetyProbability> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/RoboOntology#AvoidanceSafetyProbability> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/RoboOntology#V&VMeasurement> .
+<https://w3id.org/RoboOntology#AvoidanceSafetyProbability> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "The probability that the UGV never enters the forbidden‐zone state during the entire patrol (i.e. loc ≠ 5 in all steps)." .
+# 
+# https://w3id.org/RoboOntology#BostonDynamicsSpot
+<https://w3id.org/RoboOntology#BostonDynamicsSpot> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/RoboOntology#BostonDynamicsSpot> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/RoboOntology#Legged> .
+# 
+# https://w3id.org/RoboOntology#ClearpathJackal
+<https://w3id.org/RoboOntology#ClearpathJackal> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/RoboOntology#ClearpathJackal> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/RoboOntology#Wheeled> .
+# 
+# https://w3id.org/RoboOntology#CombinedSafetyEnergyProbability
+<https://w3id.org/RoboOntology#CombinedSafetyEnergyProbability> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/RoboOntology#CombinedSafetyEnergyProbability> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/RoboOntology#V&VMeasurement> .
+<https://w3id.org/RoboOntology#CombinedSafetyEnergyProbability> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "The probability that the UGV both avoids the forbidden zone at all times and maintains SoC above the threshold throughout the patrol." .
+# 
+# https://w3id.org/RoboOntology#Component
+<https://w3id.org/RoboOntology#Component> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://w3id.org/RoboOntology#ConditionalPatrolSuccessGivenNoCollision
+<https://w3id.org/RoboOntology#ConditionalPatrolSuccessGivenNoCollision> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/RoboOntology#ConditionalPatrolSuccessGivenNoCollision> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/RoboOntology#V&VMeasurement> .
+<https://w3id.org/RoboOntology#ConditionalPatrolSuccessGivenNoCollision> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "The probability that the UGV reaches the done state (loc = 4) given that it never entered the forbidden zone." .
+# 
+# https://w3id.org/RoboOntology#DJIMini4
+<https://w3id.org/RoboOntology#DJIMini4> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/RoboOntology#DJIMini4> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/RoboOntology#Flying> .
+# 
+# https://w3id.org/RoboOntology#Enviroment
+<https://w3id.org/RoboOntology#Enviroment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://w3id.org/RoboOntology#ExpectedMoves
+<https://w3id.org/RoboOntology#ExpectedMoves> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/RoboOntology#ExpectedMoves> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/RoboOntology#V&VMeasurement> .
+<https://w3id.org/RoboOntology#ExpectedMoves> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "The expected total number of waypoint‐moves (transitions) taken until absorption in either the done or forbidden state." .
+# 
+# https://w3id.org/RoboOntology#Flying
+<https://w3id.org/RoboOntology#Flying> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/RoboOntology#Flying> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/RoboOntology#Robot> .
+# 
+# https://w3id.org/RoboOntology#Inside
+<https://w3id.org/RoboOntology#Inside> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/RoboOntology#Inside> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/RoboOntology#Enviroment> .
+# 
+# https://w3id.org/RoboOntology#Inspection
+<https://w3id.org/RoboOntology#Inspection> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/RoboOntology#Inspection> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/RoboOntology#Task> .
+# 
+# https://w3id.org/RoboOntology#Legged
+<https://w3id.org/RoboOntology#Legged> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/RoboOntology#Legged> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/RoboOntology#Robot> .
+# 
+# https://w3id.org/RoboOntology#LeoRover
+<https://w3id.org/RoboOntology#LeoRover> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/RoboOntology#LeoRover> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/RoboOntology#Wheeled> .
+<https://w3id.org/RoboOntology#LeoRover> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid1 .
+_:genid1 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/RoboOntology#Wheels> .
+_:genid1 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/RoboOntology#hasComponent> .
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+# 
+# https://w3id.org/RoboOntology#MaintenanceRepairAndInstall
+<https://w3id.org/RoboOntology#MaintenanceRepairAndInstall> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/RoboOntology#MaintenanceRepairAndInstall> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/RoboOntology#Task> .
+# 
+# https://w3id.org/RoboOntology#Outdoors
+<https://w3id.org/RoboOntology#Outdoors> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/RoboOntology#Outdoors> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/RoboOntology#Enviroment> .
+# 
+# https://w3id.org/RoboOntology#PatrolSuccessProbability
+<https://w3id.org/RoboOntology#PatrolSuccessProbability> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/RoboOntology#PatrolSuccessProbability> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/RoboOntology#V&VMeasurement> .
+<https://w3id.org/RoboOntology#PatrolSuccessProbability> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "The probability that the UGV eventually reaches its terminal “done” state (loc = 4) by successfully visiting all four waypoints in order, starting from the initial waypoint." .
+# 
+# https://w3id.org/RoboOntology#Requirement
+<https://w3id.org/RoboOntology#Requirement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://w3id.org/RoboOntology#Robot
+<https://w3id.org/RoboOntology#Robot> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://w3id.org/RoboOntology#Task
+<https://w3id.org/RoboOntology#Task> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://w3id.org/RoboOntology#TimeBoundedCompletionProbability
+<https://w3id.org/RoboOntology#TimeBoundedCompletionProbability> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/RoboOntology#TimeBoundedCompletionProbability> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/RoboOntology#V&VMeasurement> .
+<https://w3id.org/RoboOntology#TimeBoundedCompletionProbability> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "The probability that the UGV reaches the done state within k moves (here, k = 5)." .
+# 
+# https://w3id.org/RoboOntology#UnitreeA1
+<https://w3id.org/RoboOntology#UnitreeA1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/RoboOntology#UnitreeA1> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/RoboOntology#Legged> .
+# 
+# https://w3id.org/RoboOntology#Wheeled
+<https://w3id.org/RoboOntology#Wheeled> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/RoboOntology#Wheeled> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/RoboOntology#Robot> .
+# 
+# https://w3id.org/RoboOntology#Wheels
+<https://w3id.org/RoboOntology#Wheels> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/RoboOntology#Wheels> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/RoboOntology#Component> .
+# 
+# https://w3id.org/RoboOntology#Battery‐DepletionRisk
+<https://w3id.org/RoboOntology#Battery‐DepletionRisk> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/RoboOntology#Battery‐DepletionRisk> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/RoboOntology#V&VMeasurement> .
+<https://w3id.org/RoboOntology#Battery‐DepletionRisk> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "The probability that the UGV’s battery state‐of‐charge (SoC) falls to or below the configured threshold at any time before absorption." .
+# 
+# https://w3id.org/RoboOntology#Forbidden‐ZoneEntryProbability
+<https://w3id.org/RoboOntology#Forbidden‐ZoneEntryProbability> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/RoboOntology#Forbidden‐ZoneEntryProbability> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/RoboOntology#V&VMeasurement> .
+<https://w3id.org/RoboOntology#Forbidden‐ZoneEntryProbability> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "The probability that the UGV ever enters the forbidden‐zone absorbing state (loc = 5) at any point during its patrol." .
+# 
+# https://w3id.org/RoboOntology#High‐RadiationAlertRate
+<https://w3id.org/RoboOntology#High‐RadiationAlertRate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/RoboOntology#High‐RadiationAlertRate> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/RoboOntology#V&VMeasurement> .
+<https://w3id.org/RoboOntology#High‐RadiationAlertRate> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "The expected number of high‐radiation alerts per waypoint‐move, measured until absorption in either done or forbidden state." .
+# 
+# https://w3id.org/RoboOntology#V&VMeasurement
+<https://w3id.org/RoboOntology#V&VMeasurement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/

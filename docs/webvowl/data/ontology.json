@@ -1,0 +1,651 @@
+{
+  "_comment" : "Created with OWL2VOWL (version 0.3.5), http://vowl.visualdataweb.org",
+  "header" : {
+    "languages" : [ "undefined" ],
+    "baseIris" : [ "http://www.w3.org/2002/07/owl", "http://www.w3.org/2000/01/rdf-schema", "http://www.w3.org/2001/XMLSchema", "https://w3id.org/RoboOntology" ],
+    "iri" : "https://w3id.org/RoboOntology"
+  },
+  "namespace" : [ ],
+  "class" : [ {
+    "id" : "0",
+    "type" : "owl:Class"
+  }, {
+    "id" : "3",
+    "type" : "owl:Class"
+  }, {
+    "id" : "10",
+    "type" : "owl:Class"
+  }, {
+    "id" : "17",
+    "type" : "owl:Class"
+  }, {
+    "id" : "30",
+    "type" : "owl:Class"
+  }, {
+    "id" : "21",
+    "type" : "owl:Class"
+  }, {
+    "id" : "5",
+    "type" : "owl:Class"
+  }, {
+    "id" : "6",
+    "type" : "owl:Class"
+  }, {
+    "id" : "8",
+    "type" : "owl:Class"
+  }, {
+    "id" : "26",
+    "type" : "owl:Class"
+  }, {
+    "id" : "20",
+    "type" : "owl:Class"
+  }, {
+    "id" : "18",
+    "type" : "owl:Class"
+  }, {
+    "id" : "41",
+    "type" : "owl:Class"
+  }, {
+    "id" : "14",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "32",
+    "type" : "owl:Class"
+  }, {
+    "id" : "33",
+    "type" : "owl:Class"
+  }, {
+    "id" : "44",
+    "type" : "owl:Class"
+  }, {
+    "id" : "9",
+    "type" : "owl:Class"
+  }, {
+    "id" : "24",
+    "type" : "owl:Class"
+  }, {
+    "id" : "4",
+    "type" : "owl:Class"
+  }, {
+    "id" : "11",
+    "type" : "owl:Class"
+  }, {
+    "id" : "29",
+    "type" : "owl:Class"
+  }, {
+    "id" : "39",
+    "type" : "owl:Class"
+  }, {
+    "id" : "12",
+    "type" : "owl:Class"
+  }, {
+    "id" : "1",
+    "type" : "owl:Class"
+  }, {
+    "id" : "2",
+    "type" : "owl:Class"
+  }, {
+    "id" : "23",
+    "type" : "owl:Class"
+  }, {
+    "id" : "7",
+    "type" : "owl:Class"
+  }, {
+    "id" : "27",
+    "type" : "owl:Class"
+  } ],
+  "classAttribute" : [ {
+    "iri" : "https://w3id.org/RoboOntology#V&VMeasurement",
+    "baseIri" : "https://w3id.org/RoboOntology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "V&VMeasurement"
+    },
+    "subClasses" : [ "1", "2", "3", "4", "5", "6", "7", "8", "9" ],
+    "id" : "0"
+  }, {
+    "iri" : "https://w3id.org/RoboOntology#AvoidanceSafetyProbability",
+    "baseIri" : "https://w3id.org/RoboOntology",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "The probability that the UGV never enters the forbidden‐zone state during the entire patrol (i.e. loc ≠ 5 in all steps).",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "AvoidanceSafetyProbability"
+    },
+    "id" : "3",
+    "superClasses" : [ "0" ]
+  }, {
+    "iri" : "https://w3id.org/RoboOntology#Task",
+    "baseIri" : "https://w3id.org/RoboOntology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Task"
+    },
+    "subClasses" : [ "11", "12" ],
+    "id" : "10"
+  }, {
+    "iri" : "https://w3id.org/RoboOntology#ClearpathJackal",
+    "baseIri" : "https://w3id.org/RoboOntology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ClearpathJackal"
+    },
+    "id" : "17",
+    "superClasses" : [ "18" ]
+  }, {
+    "iri" : "https://w3id.org/RoboOntology#Requirement",
+    "baseIri" : "https://w3id.org/RoboOntology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Requirement"
+    },
+    "id" : "30"
+  }, {
+    "iri" : "https://w3id.org/RoboOntology#Enviroment",
+    "baseIri" : "https://w3id.org/RoboOntology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Enviroment"
+    },
+    "subClasses" : [ "20", "29" ],
+    "id" : "21"
+  }, {
+    "iri" : "https://w3id.org/RoboOntology#Battery‐DepletionRisk",
+    "baseIri" : "https://w3id.org/RoboOntology",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "The probability that the UGV’s battery state‐of‐charge (SoC) falls to or below the configured threshold at any time before absorption.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Battery‐DepletionRisk"
+    },
+    "id" : "5",
+    "superClasses" : [ "0" ]
+  }, {
+    "iri" : "https://w3id.org/RoboOntology#High‐RadiationAlertRate",
+    "baseIri" : "https://w3id.org/RoboOntology",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "The expected number of high‐radiation alerts per waypoint‐move, measured until absorption in either done or forbidden state.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "High‐RadiationAlertRate"
+    },
+    "id" : "6",
+    "superClasses" : [ "0" ]
+  }, {
+    "iri" : "https://w3id.org/RoboOntology#PatrolSuccessProbability",
+    "baseIri" : "https://w3id.org/RoboOntology",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "The probability that the UGV eventually reaches its terminal “done” state (loc = 4) by successfully visiting all four waypoints in order, starting from the initial waypoint.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "PatrolSuccessProbability"
+    },
+    "id" : "8",
+    "superClasses" : [ "0" ]
+  }, {
+    "iri" : "https://w3id.org/RoboOntology#Wheels",
+    "baseIri" : "https://w3id.org/RoboOntology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Wheels"
+    },
+    "id" : "26",
+    "superClasses" : [ "27" ]
+  }, {
+    "iri" : "https://w3id.org/RoboOntology#Outdoors",
+    "baseIri" : "https://w3id.org/RoboOntology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Outdoors"
+    },
+    "id" : "20",
+    "superClasses" : [ "21" ]
+  }, {
+    "iri" : "https://w3id.org/RoboOntology#Wheeled",
+    "baseIri" : "https://w3id.org/RoboOntology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Wheeled"
+    },
+    "subClasses" : [ "17", "44" ],
+    "id" : "18",
+    "superClasses" : [ "33" ]
+  }, {
+    "iri" : "https://w3id.org/RoboOntology#UnitreeA1",
+    "baseIri" : "https://w3id.org/RoboOntology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "UnitreeA1"
+    },
+    "id" : "41",
+    "superClasses" : [ "32" ]
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "14",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "https://w3id.org/RoboOntology#Legged",
+    "baseIri" : "https://w3id.org/RoboOntology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Legged"
+    },
+    "subClasses" : [ "41", "39" ],
+    "id" : "32",
+    "superClasses" : [ "33" ]
+  }, {
+    "iri" : "https://w3id.org/RoboOntology#Robot",
+    "baseIri" : "https://w3id.org/RoboOntology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Robot"
+    },
+    "subClasses" : [ "24", "32", "18" ],
+    "id" : "33"
+  }, {
+    "iri" : "https://w3id.org/RoboOntology#LeoRover",
+    "baseIri" : "https://w3id.org/RoboOntology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "LeoRover"
+    },
+    "id" : "44",
+    "superClasses" : [ "18" ]
+  }, {
+    "iri" : "https://w3id.org/RoboOntology#CombinedSafetyEnergyProbability",
+    "baseIri" : "https://w3id.org/RoboOntology",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "The probability that the UGV both avoids the forbidden zone at all times and maintains SoC above the threshold throughout the patrol.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "CombinedSafetyEnergyProbability"
+    },
+    "id" : "9",
+    "superClasses" : [ "0" ]
+  }, {
+    "iri" : "https://w3id.org/RoboOntology#Flying",
+    "baseIri" : "https://w3id.org/RoboOntology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Flying"
+    },
+    "subClasses" : [ "23" ],
+    "id" : "24",
+    "superClasses" : [ "33" ]
+  }, {
+    "iri" : "https://w3id.org/RoboOntology#Forbidden‐ZoneEntryProbability",
+    "baseIri" : "https://w3id.org/RoboOntology",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "The probability that the UGV ever enters the forbidden‐zone absorbing state (loc = 5) at any point during its patrol.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Forbidden‐ZoneEntryProbability"
+    },
+    "id" : "4",
+    "superClasses" : [ "0" ]
+  }, {
+    "iri" : "https://w3id.org/RoboOntology#MaintenanceRepairAndInstall",
+    "baseIri" : "https://w3id.org/RoboOntology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "MaintenanceRepairAndInstall"
+    },
+    "id" : "11",
+    "superClasses" : [ "10" ]
+  }, {
+    "iri" : "https://w3id.org/RoboOntology#Inside",
+    "baseIri" : "https://w3id.org/RoboOntology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Inside"
+    },
+    "id" : "29",
+    "superClasses" : [ "21" ]
+  }, {
+    "iri" : "https://w3id.org/RoboOntology#BostonDynamicsSpot",
+    "baseIri" : "https://w3id.org/RoboOntology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "BostonDynamicsSpot"
+    },
+    "id" : "39",
+    "superClasses" : [ "32" ]
+  }, {
+    "iri" : "https://w3id.org/RoboOntology#Inspection",
+    "baseIri" : "https://w3id.org/RoboOntology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Inspection"
+    },
+    "id" : "12",
+    "superClasses" : [ "10" ]
+  }, {
+    "iri" : "https://w3id.org/RoboOntology#ConditionalPatrolSuccessGivenNoCollision",
+    "baseIri" : "https://w3id.org/RoboOntology",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "The probability that the UGV reaches the done state (loc = 4) given that it never entered the forbidden zone.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "ConditionalPatrolSuccessGivenNoCollision"
+    },
+    "id" : "1",
+    "superClasses" : [ "0" ]
+  }, {
+    "iri" : "https://w3id.org/RoboOntology#ExpectedMoves",
+    "baseIri" : "https://w3id.org/RoboOntology",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "The expected total number of waypoint‐moves (transitions) taken until absorption in either the done or forbidden state.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "ExpectedMoves"
+    },
+    "id" : "2",
+    "superClasses" : [ "0" ]
+  }, {
+    "iri" : "https://w3id.org/RoboOntology#DJIMini4",
+    "baseIri" : "https://w3id.org/RoboOntology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "DJIMini4"
+    },
+    "id" : "23",
+    "superClasses" : [ "24" ]
+  }, {
+    "iri" : "https://w3id.org/RoboOntology#TimeBoundedCompletionProbability",
+    "baseIri" : "https://w3id.org/RoboOntology",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "The probability that the UGV reaches the done state within k moves (here, k = 5).",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "TimeBoundedCompletionProbability"
+    },
+    "id" : "7",
+    "superClasses" : [ "0" ]
+  }, {
+    "iri" : "https://w3id.org/RoboOntology#Component",
+    "baseIri" : "https://w3id.org/RoboOntology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Component"
+    },
+    "subClasses" : [ "26" ],
+    "id" : "27"
+  } ],
+  "property" : [ {
+    "id" : "13",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "19",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "22",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "25",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "28",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "31",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "34",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "35",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "36",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "37",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "38",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "40",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "42",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "43",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "45",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "16",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "46",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "47",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "48",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "49",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "50",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "51",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "52",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "53",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "54",
+    "type" : "owl:someValuesFrom"
+  } ],
+  "propertyAttribute" : [ {
+    "iri" : "http://www.w3.org/2002/07/owl#topObjectProperty",
+    "baseIri" : "http://www.w3.org/2002/07/owl",
+    "range" : "14",
+    "label" : {
+      "IRI-based" : "topObjectProperty"
+    },
+    "domain" : "14",
+    "subproperty" : [ "15", "16" ],
+    "attributes" : [ "object", "external" ],
+    "id" : "13"
+  }, {
+    "range" : "21",
+    "domain" : "20",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "19"
+  }, {
+    "range" : "24",
+    "domain" : "23",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "22"
+  }, {
+    "range" : "27",
+    "domain" : "26",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "25"
+  }, {
+    "range" : "21",
+    "domain" : "29",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "28"
+  }, {
+    "range" : "33",
+    "domain" : "32",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "31"
+  }, {
+    "range" : "33",
+    "domain" : "24",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "34"
+  }, {
+    "range" : "33",
+    "domain" : "18",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "35"
+  }, {
+    "range" : "10",
+    "domain" : "12",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "36"
+  }, {
+    "range" : "10",
+    "domain" : "11",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "37"
+  }, {
+    "range" : "32",
+    "domain" : "39",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "38"
+  }, {
+    "range" : "32",
+    "domain" : "41",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "40"
+  }, {
+    "range" : "0",
+    "domain" : "9",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "42"
+  }, {
+    "range" : "18",
+    "domain" : "44",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "43"
+  }, {
+    "range" : "18",
+    "domain" : "17",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "45"
+  }, {
+    "iri" : "https://w3id.org/RoboOntology#hasRequirement",
+    "baseIri" : "https://w3id.org/RoboOntology",
+    "range" : "14",
+    "label" : {
+      "IRI-based" : "hasRequirement"
+    },
+    "superproperty" : [ "13" ],
+    "domain" : "14",
+    "attributes" : [ "object" ],
+    "id" : "16"
+  }, {
+    "range" : "0",
+    "domain" : "1",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "46"
+  }, {
+    "range" : "0",
+    "domain" : "2",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "47"
+  }, {
+    "range" : "0",
+    "domain" : "3",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "48"
+  }, {
+    "range" : "0",
+    "domain" : "4",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "49"
+  }, {
+    "range" : "0",
+    "domain" : "5",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "50"
+  }, {
+    "range" : "0",
+    "domain" : "6",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "51"
+  }, {
+    "range" : "0",
+    "domain" : "7",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "52"
+  }, {
+    "range" : "0",
+    "domain" : "8",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "53"
+  }, {
+    "iri" : "https://w3id.org/RoboOntology#hasComponent",
+    "baseIri" : "https://w3id.org/RoboOntology",
+    "range" : "26",
+    "label" : {
+      "IRI-based" : "hasComponent"
+    },
+    "superproperty" : [ "13" ],
+    "domain" : "44",
+    "attributes" : [ "object", "someValues" ],
+    "id" : "54"
+  } ]
+}

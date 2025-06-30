@@ -1,0 +1,315 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="https://w3id.org/RoboOntology#"
+     xml:base="https://w3id.org/RoboOntology"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="https://w3id.org/RoboOntology">
+        <owl:versionIRI rdf:resource="https://w3id.org/RoboOntology"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- https://w3id.org/RoboOntology#hasComponent -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/RoboOntology#hasComponent">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/RoboOntology#hasRequirement -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/RoboOntology#hasRequirement">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- https://w3id.org/RoboOntology#AvoidanceSafetyProbability -->
+
+
+    <owl:Class rdf:about="https://w3id.org/RoboOntology#AvoidanceSafetyProbability">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/RoboOntology#V&amp;VMeasurement"/>
+        <rdfs:isDefinedBy>The probability that the UGV never enters the forbidden‐zone state during the entire patrol (i.e. loc ≠ 5 in all steps).</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/RoboOntology#BostonDynamicsSpot -->
+
+
+    <owl:Class rdf:about="https://w3id.org/RoboOntology#BostonDynamicsSpot">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/RoboOntology#Legged"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/RoboOntology#ClearpathJackal -->
+
+
+    <owl:Class rdf:about="https://w3id.org/RoboOntology#ClearpathJackal">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/RoboOntology#Wheeled"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/RoboOntology#CombinedSafetyEnergyProbability -->
+
+
+    <owl:Class rdf:about="https://w3id.org/RoboOntology#CombinedSafetyEnergyProbability">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/RoboOntology#V&amp;VMeasurement"/>
+        <rdfs:isDefinedBy>The probability that the UGV both avoids the forbidden zone at all times and maintains SoC above the threshold throughout the patrol.</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/RoboOntology#Component -->
+
+
+    <owl:Class rdf:about="https://w3id.org/RoboOntology#Component"/>
+    
+
+
+    <!-- https://w3id.org/RoboOntology#ConditionalPatrolSuccessGivenNoCollision -->
+
+
+    <owl:Class rdf:about="https://w3id.org/RoboOntology#ConditionalPatrolSuccessGivenNoCollision">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/RoboOntology#V&amp;VMeasurement"/>
+        <rdfs:isDefinedBy>The probability that the UGV reaches the done state (loc = 4) given that it never entered the forbidden zone.</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/RoboOntology#DJIMini4 -->
+
+
+    <owl:Class rdf:about="https://w3id.org/RoboOntology#DJIMini4">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/RoboOntology#Flying"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/RoboOntology#Enviroment -->
+
+
+    <owl:Class rdf:about="https://w3id.org/RoboOntology#Enviroment"/>
+    
+
+
+    <!-- https://w3id.org/RoboOntology#ExpectedMoves -->
+
+
+    <owl:Class rdf:about="https://w3id.org/RoboOntology#ExpectedMoves">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/RoboOntology#V&amp;VMeasurement"/>
+        <rdfs:isDefinedBy>The expected total number of waypoint‐moves (transitions) taken until absorption in either the done or forbidden state.</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/RoboOntology#Flying -->
+
+
+    <owl:Class rdf:about="https://w3id.org/RoboOntology#Flying">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/RoboOntology#Robot"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/RoboOntology#Inside -->
+
+
+    <owl:Class rdf:about="https://w3id.org/RoboOntology#Inside">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/RoboOntology#Enviroment"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/RoboOntology#Inspection -->
+
+
+    <owl:Class rdf:about="https://w3id.org/RoboOntology#Inspection">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/RoboOntology#Task"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/RoboOntology#Legged -->
+
+
+    <owl:Class rdf:about="https://w3id.org/RoboOntology#Legged">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/RoboOntology#Robot"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/RoboOntology#LeoRover -->
+
+
+    <owl:Class rdf:about="https://w3id.org/RoboOntology#LeoRover">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/RoboOntology#Wheeled"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/RoboOntology#hasComponent"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/RoboOntology#Wheels"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/RoboOntology#MaintenanceRepairAndInstall -->
+
+
+    <owl:Class rdf:about="https://w3id.org/RoboOntology#MaintenanceRepairAndInstall">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/RoboOntology#Task"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/RoboOntology#Outdoors -->
+
+
+    <owl:Class rdf:about="https://w3id.org/RoboOntology#Outdoors">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/RoboOntology#Enviroment"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/RoboOntology#PatrolSuccessProbability -->
+
+
+    <owl:Class rdf:about="https://w3id.org/RoboOntology#PatrolSuccessProbability">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/RoboOntology#V&amp;VMeasurement"/>
+        <rdfs:isDefinedBy>The probability that the UGV eventually reaches its terminal “done” state (loc = 4) by successfully visiting all four waypoints in order, starting from the initial waypoint.</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/RoboOntology#Requirement -->
+
+
+    <owl:Class rdf:about="https://w3id.org/RoboOntology#Requirement"/>
+    
+
+
+    <!-- https://w3id.org/RoboOntology#Robot -->
+
+
+    <owl:Class rdf:about="https://w3id.org/RoboOntology#Robot"/>
+    
+
+
+    <!-- https://w3id.org/RoboOntology#Task -->
+
+
+    <owl:Class rdf:about="https://w3id.org/RoboOntology#Task"/>
+    
+
+
+    <!-- https://w3id.org/RoboOntology#TimeBoundedCompletionProbability -->
+
+
+    <owl:Class rdf:about="https://w3id.org/RoboOntology#TimeBoundedCompletionProbability">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/RoboOntology#V&amp;VMeasurement"/>
+        <rdfs:isDefinedBy>The probability that the UGV reaches the done state within k moves (here, k = 5).</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/RoboOntology#UnitreeA1 -->
+
+
+    <owl:Class rdf:about="https://w3id.org/RoboOntology#UnitreeA1">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/RoboOntology#Legged"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/RoboOntology#Wheeled -->
+
+
+    <owl:Class rdf:about="https://w3id.org/RoboOntology#Wheeled">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/RoboOntology#Robot"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/RoboOntology#Wheels -->
+
+
+    <owl:Class rdf:about="https://w3id.org/RoboOntology#Wheels">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/RoboOntology#Component"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/RoboOntology#Battery‐DepletionRisk -->
+
+
+    <owl:Class rdf:about="https://w3id.org/RoboOntology#Battery‐DepletionRisk">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/RoboOntology#V&amp;VMeasurement"/>
+        <rdfs:isDefinedBy>The probability that the UGV’s battery state‐of‐charge (SoC) falls to or below the configured threshold at any time before absorption.</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/RoboOntology#Forbidden‐ZoneEntryProbability -->
+
+
+    <owl:Class rdf:about="https://w3id.org/RoboOntology#Forbidden‐ZoneEntryProbability">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/RoboOntology#V&amp;VMeasurement"/>
+        <rdfs:isDefinedBy>The probability that the UGV ever enters the forbidden‐zone absorbing state (loc = 5) at any point during its patrol.</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/RoboOntology#High‐RadiationAlertRate -->
+
+
+    <owl:Class rdf:about="https://w3id.org/RoboOntology#High‐RadiationAlertRate">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/RoboOntology#V&amp;VMeasurement"/>
+        <rdfs:isDefinedBy>The expected number of high‐radiation alerts per waypoint‐move, measured until absorption in either done or forbidden state.</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/RoboOntology#V&amp;VMeasurement -->
+
+
+    <owl:Class rdf:about="https://w3id.org/RoboOntology#V&amp;VMeasurement"/>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/ -->
+
+

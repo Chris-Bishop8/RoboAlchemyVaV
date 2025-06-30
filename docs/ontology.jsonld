@@ -1,0 +1,207 @@
+[ {
+  "@id" : "_:genid1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/RoboOntology#hasComponent"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://w3id.org/RoboOntology#Wheels"
+  } ]
+}, {
+  "@id" : "https://w3id.org/RoboOntology",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
+  "http://www.w3.org/2002/07/owl#versionIRI" : [ {
+    "@id" : "https://w3id.org/RoboOntology"
+  } ]
+}, {
+  "@id" : "https://w3id.org/RoboOntology#AvoidanceSafetyProbability",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@value" : "The probability that the UGV never enters the forbidden‐zone state during the entire patrol (i.e. loc ≠ 5 in all steps)."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/RoboOntology#V&VMeasurement"
+  } ]
+}, {
+  "@id" : "https://w3id.org/RoboOntology#Battery‐DepletionRisk",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@value" : "The probability that the UGV’s battery state‐of‐charge (SoC) falls to or below the configured threshold at any time before absorption."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/RoboOntology#V&VMeasurement"
+  } ]
+}, {
+  "@id" : "https://w3id.org/RoboOntology#BostonDynamicsSpot",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/RoboOntology#Legged"
+  } ]
+}, {
+  "@id" : "https://w3id.org/RoboOntology#ClearpathJackal",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/RoboOntology#Wheeled"
+  } ]
+}, {
+  "@id" : "https://w3id.org/RoboOntology#CombinedSafetyEnergyProbability",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@value" : "The probability that the UGV both avoids the forbidden zone at all times and maintains SoC above the threshold throughout the patrol."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/RoboOntology#V&VMeasurement"
+  } ]
+}, {
+  "@id" : "https://w3id.org/RoboOntology#Component",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://w3id.org/RoboOntology#ConditionalPatrolSuccessGivenNoCollision",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@value" : "The probability that the UGV reaches the done state (loc = 4) given that it never entered the forbidden zone."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/RoboOntology#V&VMeasurement"
+  } ]
+}, {
+  "@id" : "https://w3id.org/RoboOntology#DJIMini4",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/RoboOntology#Flying"
+  } ]
+}, {
+  "@id" : "https://w3id.org/RoboOntology#Enviroment",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://w3id.org/RoboOntology#ExpectedMoves",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@value" : "The expected total number of waypoint‐moves (transitions) taken until absorption in either the done or forbidden state."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/RoboOntology#V&VMeasurement"
+  } ]
+}, {
+  "@id" : "https://w3id.org/RoboOntology#Flying",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/RoboOntology#Robot"
+  } ]
+}, {
+  "@id" : "https://w3id.org/RoboOntology#Forbidden‐ZoneEntryProbability",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@value" : "The probability that the UGV ever enters the forbidden‐zone absorbing state (loc = 5) at any point during its patrol."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/RoboOntology#V&VMeasurement"
+  } ]
+}, {
+  "@id" : "https://w3id.org/RoboOntology#High‐RadiationAlertRate",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@value" : "The expected number of high‐radiation alerts per waypoint‐move, measured until absorption in either done or forbidden state."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/RoboOntology#V&VMeasurement"
+  } ]
+}, {
+  "@id" : "https://w3id.org/RoboOntology#Inside",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/RoboOntology#Enviroment"
+  } ]
+}, {
+  "@id" : "https://w3id.org/RoboOntology#Inspection",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/RoboOntology#Task"
+  } ]
+}, {
+  "@id" : "https://w3id.org/RoboOntology#Legged",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/RoboOntology#Robot"
+  } ]
+}, {
+  "@id" : "https://w3id.org/RoboOntology#LeoRover",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/RoboOntology#Wheeled"
+  }, {
+    "@id" : "_:genid1"
+  } ]
+}, {
+  "@id" : "https://w3id.org/RoboOntology#MaintenanceRepairAndInstall",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/RoboOntology#Task"
+  } ]
+}, {
+  "@id" : "https://w3id.org/RoboOntology#Outdoors",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/RoboOntology#Enviroment"
+  } ]
+}, {
+  "@id" : "https://w3id.org/RoboOntology#PatrolSuccessProbability",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@value" : "The probability that the UGV eventually reaches its terminal “done” state (loc = 4) by successfully visiting all four waypoints in order, starting from the initial waypoint."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/RoboOntology#V&VMeasurement"
+  } ]
+}, {
+  "@id" : "https://w3id.org/RoboOntology#Requirement",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://w3id.org/RoboOntology#Robot",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://w3id.org/RoboOntology#Task",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://w3id.org/RoboOntology#TimeBoundedCompletionProbability",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@value" : "The probability that the UGV reaches the done state within k moves (here, k = 5)."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/RoboOntology#V&VMeasurement"
+  } ]
+}, {
+  "@id" : "https://w3id.org/RoboOntology#UnitreeA1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/RoboOntology#Legged"
+  } ]
+}, {
+  "@id" : "https://w3id.org/RoboOntology#V&VMeasurement",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://w3id.org/RoboOntology#Wheeled",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/RoboOntology#Robot"
+  } ]
+}, {
+  "@id" : "https://w3id.org/RoboOntology#Wheels",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/RoboOntology#Component"
+  } ]
+}, {
+  "@id" : "https://w3id.org/RoboOntology#hasComponent",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty"
+  } ]
+}, {
+  "@id" : "https://w3id.org/RoboOntology#hasRequirement",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty"
+  } ]
+} ]
